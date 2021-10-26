@@ -1,11 +1,11 @@
 #ifndef documentos_h
 #define documentos_h
 
-void cargarDoc(HashMap * documentos, List * palabras);
+void cargarDoc(HashMap * documentos, HashMap * palabras);
 
-void mostrarDoc();
+void mostrarDoc(HashMap * documentos);
 
-void buscarPalabra();
+void buscarPalabra(HashMap * documentos, HashMap * palabras);
 
 void buscarMasPalabras();
 

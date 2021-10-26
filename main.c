@@ -8,9 +8,8 @@
 #include "documentos.h"
 
 int main(){
-    srand(time(NULL));
     HashMap * documentos = createMap(100);
-    List * palabras = createList();
+    HashMap * palabras = createMap(100);
 
     int menu = 1;
      while(menu!= 0){
@@ -33,8 +32,20 @@ int main(){
         fflush(stdin);
         switch (menu){
         case 1:
-           cargarDoc(documentos, palabras);          
+           cargarDoc(documentos, palabras);
+           break;
+
+        case 2:
+            mostrarDoc(documentos);
+            break;
+
+        case 3:
+            buscarPalabra(documentos, palabras);
+            break;                 
         }
+
+        
+    
     }
     return 0;
 }
