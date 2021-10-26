@@ -64,12 +64,12 @@ void contarCaracteres(HashMap * documentos){
     Documento * new = firstMap(documentos);
     while(new != NULL){
         int cantidad = 0;
-        FILE * docu = fopen(new->nombre,"r");
+        /*FILE * docu = fopen(new->nombre,"r");
 
         fseek(docu,0,SEEK_SET);
         while(fgetc(docu)){
             cantidad++;
-        }
+        }*/
         int cantP = 0;
         int cantC = 0;
         HashMap * docu = firstMap(new->map);
